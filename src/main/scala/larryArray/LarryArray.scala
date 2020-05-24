@@ -4,6 +4,10 @@ import utils.TimeUtils._
 
 object LarryArray extends App {
 
+  /*
+   * We rotate every element moving them to the previous space in array
+   * [3,1,2] => [1,2,3]
+   */
   def rotateLeft(A: Array[Int]): Array[Int] = {
     val itemsToRotateMinus1 = 2
     (0 to A.length - 1).map{ i =>
@@ -12,6 +16,10 @@ object LarryArray extends App {
     }.toArray
   }
 
+  /*
+   * We rotate every element moving them to the next space in array
+   * [2,3,1] => [1,2,3]
+   */
   def rotateRight(A: Array[Int]): Array[Int] = {
     val itemsToRotateMinus1 = 2
     (0 to A.length - 1).map{ i =>
@@ -45,14 +53,13 @@ object LarryArray extends App {
     else "NO"
   }
 
+  // To execute the code
   println(larrysArray(Array(3,1,2))) // YES
   println(larrysArray(Array(1,3,4,2)))  // YES
   println(larrysArray(Array(1,2,3,5,4)))  // NO
   println(larrysArray(Array(1,2,3,4,5)))  // YES
   println(larrysArray(Array(2,3,4,1))) //NO
   println(larrysArray(Array(2,4,3,1))) //YES
-
-
   println(larrysArray(Array(9,6,8,12,3,7,1,11,10,2,5,4))) // NO*/
   println(
     time(larrysArray(Array(17,21,2,1,16,9,12,11,6,18,20,7,14,8,19,10,3,4,13,5,15)))
