@@ -1,4 +1,4 @@
-package playground
+package justToTry
 
 import akka.actor.{ActorLogging, ActorSystem, Props}
 import akka.persistence.PersistentActor
