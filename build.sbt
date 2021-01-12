@@ -9,4 +9,5 @@ lazy val akkaVersion = "2.5.13" // must be 2.5.13 so that it's compatible with t
 resolvers += Resolver.jcenterRepo
 
 libraryDependencies ++= Seq(
+  "com.storm-enroute" %% "scalameter-core" % "0.19"
 )
